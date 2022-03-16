@@ -7,6 +7,8 @@
 </head>
 
 <body onload="doStartGame();">
+  <p class="menuText">Rob Miles Red Nose Day Lecture in Rhyme 2022</p>
+
   <p id="heading" class="mainHeading">Procrastination Challenge</p>
 
   <p id="line1" class="menuText">Welcome to the game</p>
@@ -16,7 +18,8 @@
   <div class="menuButton">
     <button id="startButton" class="menuButton" onclick="doStartPressed();">Start</button>
   </div>
-  <script>
+
+<script>
     var startDate;
     var timeOut;
     var heading = document.getElementById("heading");
@@ -32,7 +35,7 @@
     function doStartPressed() {
       heading.innerHTML = "Game Over";
       line1.innerHTML="Next time you should procrastinate more...";
-      line2.innerHTML="";
+      line2.innerHTML=`<a href="https://www.justgiving.com/fundraising/rhyming-rob-miles">find out more here</a> `;
       button.style.visibility='hidden';
       clearTimeout(timeOut);
     }
@@ -40,7 +43,7 @@
     function doWin(){
       heading.innerHTML = "You Win";
       line1.innerHTML="Nice procrastinating";
-      line2.innerHTML="";
+      line2.innerHTML=`<a href="https://www.justgiving.com/fundraising/rhyming-rob-miles">find out more here</a> `;
       button.style.visibility='hidden';
     }
 
