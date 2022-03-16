@@ -2,21 +2,21 @@
 <html lang="en">
 
 <head>
-  <title>Procrastination Challenge</title>
+  <title>Hesitation Challenge</title>
   <link rel="stylesheet" href="styles.css">
 </head>
 
 <body onload="doStartGame();">
   <p class="mainHeading">Rob Miles Red Nose Day Lecture in Rhyme 2022</p>
 
-  <p id="heading" class="prettyHeading">Procrastination Challenge</p>
+  <p id="heading" class="prettyHeading">Hesitation Challenge</p>
 
   <p id="line1" class="message">Welcome to the game</p>
 
   <p id="line2" class="message">Press the button when you are ready to start</p>
 
   <div class="menuButton">
-    <button id="startButton" class="menuButton" onclick="doStartPressed();">Start</button>
+    <button id="startButton" class="menuButton" onclick="doWin();">Start</button>
   </div>
 
 <script>
@@ -29,20 +29,20 @@
 
     function doStartGame() {
       startDate = new Date();
-      timeOut = setTimeout(doWin,6*1000);   
+      timeOut = setTimeout(doTimeout,1.5*1000);   
     }
 
-    function doStartPressed() {
+    function doTimeout() {
       heading.innerHTML = "Game Over";
-      line1.innerHTML="Next time you should procrastinate more...";
+      line1.innerHTML="Next time don't hesitate...";
       line2.innerHTML=`<a href="https://www.justgiving.com/fundraising/rhyming-rob-miles">find out more here</a> `;
       button.style.visibility='hidden';
-      clearTimeout(timeOut);
     }
 
     function doWin(){
+      clearTimeout(timeOut);
       heading.innerHTML = "You Win";
-      line1.innerHTML="Nice procrastinating";
+      line1.innerHTML="No hesitation...";
       line2.innerHTML=`<a href="https://www.justgiving.com/fundraising/rhyming-rob-miles">find out more here</a> `;
       button.style.visibility='hidden';
     }

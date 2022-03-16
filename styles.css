@@ -1,20 +1,43 @@
-.mainHeading {
-    font-size: 4em;
+.prettyHeading,.mainHeading,.subHeading,.item,.menuButton,.message
+{
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    color:black;
+}
+
+.mainHeading {
+    font-size: 2em;
+    text-align: center;
+}
+
+.prettyHeading {
+    font-size: 4em;
     color:magenta;
     text-align: center;
     text-shadow: 3px 3px 0 cyan, 10px 10px 10px grey;
 }
 
-.gameOver {
-    font-size: 4em;
-    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
-    color:red;
-    text-align: center;
-    text-shadow: 3px 3px 0 orange, 10px 10px 10px grey;
+.subHeading {
+    font-size: 2em;
+    text-align: left;
+    margin-left:10%;
+    margin-right: 10%;
 }
 
-.menuText,.menuButton
+.item {
+    font-size: 2em;
+    text-align: left;
+    margin-left:15%;
+    margin-right: 10%;
+}
+
+.message {
+    font-size: 2em;
+    text-align: center;
+    margin-left:15%;
+    margin-right: 10%;
+}
+
+.menuButton
 {
     font-family:Arial, Helvetica, sans-serif;
     color:black;
