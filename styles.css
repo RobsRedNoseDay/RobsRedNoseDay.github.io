@@ -1,0 +1,24 @@
+.mainHeading {
+    font-size: 4em;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    color:magenta;
+    text-align: center;
+    text-shadow: 3px 3px 0 cyan, 10px 10px 10px grey;
+}
+
+.gameOver {
+    font-size: 4em;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    color:red;
+    text-align: center;
+    text-shadow: 3px 3px 0 orange, 10px 10px 10px grey;
+}
+
+.menuText,.menuButton
+{
+    font-family:Arial, Helvetica, sans-serif;
+    color:black;
+    font-size: 30px;
+    text-align: center;
+}
+

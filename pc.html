@@ -1,0 +1,51 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <title>Procrastination Challenge</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+
+<body onload="doStartGame();">
+  <p id="heading" class="mainHeading">Procrastination Challenge</p>
+
+  <p id="line1" class="menuText">Welcome to the game</p>
+
+  <p id="line2" class="menuText">Press the button when you are ready to start</p>
+
+  <div class="menuButton">
+    <button id="startButton" class="menuButton" onclick="doStartPressed();">Start</button>
+  </div>
+  <script>
+    var startDate;
+    var timeOut;
+    var heading = document.getElementById("heading");
+    var line1 = document.getElementById("line1");
+    var line2 = document.getElementById("line2");
+    var button = document.getElementById("startButton");
+
+    function doStartGame() {
+      startDate = new Date();
+      timeOut = setTimeout(doWin,6*1000);   
+    }
+
+    function doStartPressed() {
+      heading.innerHTML = "Game Over";
+      line1.innerHTML="Next time you should procrastinate more...";
+      line2.innerHTML="";
+      button.style.visibility='hidden';
+      clearTimeout(timeOut);
+    }
+
+    function doWin(){
+      heading.innerHTML = "You Win";
+      line1.innerHTML="Nice procrastinating";
+      line2.innerHTML="";
+      button.style.visibility='hidden';
+    }
+
+  </script>
+
+</body>
+
+</html>
