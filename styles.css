@@ -1,4 +1,4 @@
-.prettyHeading,.mainHeading,.subHeading,.item,.menuButton,.message
+.prettyHeading,.mainHeading,.subHeading,.item,.menuButton,.message,.author
 {
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
     color:black;
@@ -17,7 +17,7 @@
 }
 
 .subHeading {
-    font-size: 3em;
+    font-size: 3.5em;
     text-align: left;
     margin-left:10%;
     margin-right: 10%;
@@ -34,6 +34,13 @@
     font-size: 3em;
     text-align: center;
     margin-left:15%;
+    margin-right: 10%;
+}
+
+.author{
+    font-size: 2em;
+    text-align: right;
+    margin-left:10%;
     margin-right: 10%;
 }
 
