@@ -1,12 +1,15 @@
 ﻿<!DOCTYPE html>
 <html lang="en">
 
-<body>
+<body onload="doShowText();">
   <p id="target"></p>
 </body>
 <script>
-  targetElement = document.getElementById("target");
-  targetElement.innerHTML = "Hello World!";
+  function doShowText() {
+    targetElement = document.getElementById("target");
+    targetElement.innerHTML = "Hello World!";
+  }
+
 </script>
 
 </html>
